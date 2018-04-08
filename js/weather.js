@@ -48,8 +48,10 @@ function weather(city) {
             if(i==="weather" && dato.hasOwnProperty(i)) {
                 out+="weather: ";
                 for (let j in dato[i]) {
-                    out+=dato[i][j].description+" ";
-                    console.log(dato[i][j].main + " " + i + " "+j);
+                    if(dato[i].hasOwnProperty(j)) {
+                        out += dato[i][j].description + " ";
+                        //console.log(dato[i][j].main + " " + i + " " + j);
+                    }
                 }
                 out+="\r\n"
             }
