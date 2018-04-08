@@ -4,3 +4,10 @@ img.resize {
     max-width: 500px;
     max-height: 5000px;
 }
+img.location{
+    height: auto;
+    width: auto;
+    max-width: 200px;
+    max-height: 200px;
+    float: right;
+}
